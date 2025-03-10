@@ -4,7 +4,7 @@ import {defineConfig, loadEnv} from "vite";
 export default ({ mode }) => {
     const env = loadEnv(mode, process.cwd(), '');
     const API_URL = `${env.VITE_APP_HOST}:${env.VITE_APP_PORT}`;
-    console.log(`VITE CONFIG API URL : ${API_URL}`);
+    //console.log(`VITE CONFIG API URL : ${API_URL}`);
 
     return defineConfig({
         plugins: [
